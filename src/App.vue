@@ -13,7 +13,10 @@ import FooterGuide from '../src/components/FooterGuide/FootGuide.vue'
     //注册组件
     components:{
       FooterGuide,
-    }
+    },
+   async mounted(){
+     this.$store.dispatch('getAddress')
+   }
   }
 </script>
 
